@@ -71,7 +71,7 @@
 
             sass: {
                 files: 'scss/**/*.scss',
-                tasks: ['sass', 'concat', 'uglify']
+                tasks: ['sass']
             }
         }
     });
@@ -81,6 +81,7 @@
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.registerTask('build', ['copy']);
     grunt.registerTask('default', ['browserSync:dev', 'watch']);

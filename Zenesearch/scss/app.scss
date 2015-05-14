@@ -1,4 +1,5 @@
-﻿@import "settings";
+﻿@import "normalize";
+@import "settings";
 @import "foundation";
 
 // Or selectively include components
@@ -17,7 +18,7 @@
 //   "foundation/components/grid",
 //   "foundation/components/inline-lists",
 //   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
+//   "foundation/components/keystrokes", 
 //   "foundation/components/labels",
 //   "foundation/components/magellan",
 //   "foundation/components/orbit",

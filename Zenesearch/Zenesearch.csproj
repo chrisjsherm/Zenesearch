@@ -95,6 +95,7 @@
     <Content Include="bower.json" />
     <Content Include="package.json" />
     <Content Include="scss\app.scss" />
+    <Content Include="scss\_settings.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -103,6 +104,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\app.css" />
+    <Content Include="dist\zenesearch.js" />
     <Content Include="Gruntfile.js" />
     <Content Include="index.html" />
     <Content Include="scripts\fastclick\lib\fastclick.js" />
@@ -402,9 +405,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="dist\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
