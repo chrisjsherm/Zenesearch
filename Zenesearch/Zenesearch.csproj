@@ -95,6 +95,7 @@
     <Content Include="ApplicationInsights.config" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
+    <Content Include="scripts\app.js" />
     <Content Include="scss\app.scss" />
     <Content Include="scss\_settings.scss" />
     <Content Include="scss\_google-map.scss" />
