@@ -103,6 +103,7 @@
     <Content Include="scss\_content.scss" />
     <Content Include="scss\_app-settings.scss" />
     <Content Include="scss\_fieldset.scss" />
+    <None Include="Properties\PublishProfiles\zenesearch.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
