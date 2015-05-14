@@ -1,0 +1,18 @@
+{
+  "name": "Zenesearch",
+  "version": "0.0.0",
+  "authors": [
+    "chrisjsherm <chris.sherman@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "~3.3.0"
+  }
+}
