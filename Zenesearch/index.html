@@ -11,17 +11,34 @@
 
     <div class="row">
         <div class="small-10 columns small-centered">
-            <input id="pac-input" class="controls" type="text" placeholder="Search location">
+            <div class="row collapse">
+                <div class="small-3 columns">
+                    <span class="prefix">
+                        Location
+                    </span>
+                </div>
 
-            <div id="map-canvas"></div>
+                <div class="small-6 columns left">
+                    <input id="pac-input" type="text" placeholder="Search location">
+                </div>
+            </div>
+            <div class="hide" id="map-canvas"></div>
         </div>
     </div>
 
     <div class="row">
         <div class="small-10 small-centered columns">
             <form class="search-input" data-bind="submit: searchPlaces">
-                <input type="text" data-bind="textinput: searchQuery" />
-                <button type="submit">Search for places nearby</button>
+                <div class="row collapse">
+                    <div class="small-3 columns">
+                        <span class="prefix">Places</span>
+                    </div>
+                    <div class="small-6 columns left">
+                        <input type="text" data-bind="textinput: searchQuery" placeholder="Search for places nearby" />
+                    </div>
+                </div>
+                
+                <button type="submit">Search nearby</button>
             </form>
         </div>
     </div>
@@ -60,7 +77,7 @@
             // Properties.
             places: ko.observableArray([]),
             location: ko.observable(),
-            searchQuery: ko.observable('Hello world'),
+            searchQuery: ko.observable(),
             service: new google.maps.places.PlacesService(chrisjsherm.map),
 
             // Methods.
@@ -80,7 +97,7 @@
             // Create the search box and link it to the UI element.
             var input = /** @type {HTMLInputElement} */(
                 document.getElementById('pac-input'));
-            map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+            //map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
             var searchBox = new google.maps.places.SearchBox(
               /** @type {HTMLInputElement} */(input));
@@ -141,7 +158,7 @@
         function searchPlaces() {
             var request = {
                 location: vm.location(),
-                radius: '500',
+                radius: '250',
                 query: vm.searchQuery()
             };
 
