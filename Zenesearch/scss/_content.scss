@@ -1,0 +1,26 @@
+﻿html {
+    background-color: #363C43;
+    background-image: url(/img/low_contrast_linen_@2X.png);
+}
+
+.banner-title {
+    background-color: $orange;
+}
+
+.content {
+    padding: emCalc(15px) emCalc(30px);
+}
+
+.details {
+    span {
+        display: block;
+        margin-bottom: emCalc(25px);
+    }
+}
+
+.view-background {
+    background-color: rgba(252, 245, 238,0.75);
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,.098),-3px 3px 3px 3px rgba(0,0,0,.098);
+    margin: emCalc(25px) 0;
+    border-radius: $global-radius;
+}

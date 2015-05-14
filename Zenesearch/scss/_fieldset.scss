@@ -1,0 +1,13 @@
+﻿fieldset {
+background-color: #646464;
+    border-color: $orange;
+    border-radius: $global-radius;
+
+    h3 {
+        margin-bottom: emCalc(25px);
+    }
+
+    .button {
+        margin-bottom: 0;
+    }
+}

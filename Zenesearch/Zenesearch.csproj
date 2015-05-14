@@ -90,6 +90,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\low_contrast_linen_%402X.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config" />
     <Content Include="bower.json" />
@@ -98,6 +99,9 @@
     <Content Include="scss\_settings.scss" />
     <Content Include="scss\_google-map.scss" />
     <Content Include="scss\_form.scss" />
+    <Content Include="scss\_content.scss" />
+    <Content Include="scss\_app-settings.scss" />
+    <Content Include="scss\_fieldset.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -419,7 +423,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>58404</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
