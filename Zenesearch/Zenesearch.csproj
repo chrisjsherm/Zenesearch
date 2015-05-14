@@ -96,6 +96,8 @@
     <Content Include="package.json" />
     <Content Include="scss\app.scss" />
     <Content Include="scss\_settings.scss" />
+    <Content Include="scss\_google-map.scss" />
+    <Content Include="scss\_form.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
